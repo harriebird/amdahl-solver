@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="amdahl's law, compute">
+		<meta name="Description" content="An App that computes overall speedup.">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<script type="text/javascript" src="lib/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/chromeless.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+		<title>Amdahl Solver</title>
+	</head>
+	<body role="application" style="background-color:#097E3F;" class="container">
+		<section role="region" id="main-menu">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<img class="img center-block" src="img/icon-128.png">
+				</div>
+				<div id="panel-body">
+					<h3>Solve for?</h3>
+					<button class="btn btn-primary btn-block btn-lg" id="solvefe" role="button">Solve Fraction<sub>enhanced</sub></button>
+					<button class="btn btn-primary btn-block btn-lg" id="solvese" role="button">Solve Speedup<sub>enhanced</sub></button>
+					<button class="btn btn-primary btn-block btn-lg" id="solveso" role="button">Solve Speedup<sub>overall</sub></button>
+					<button class="btn btn-danger btn-block" id="exit" role="button">Exit Application</button>
+				</div>
+				<div class="panel-footer"style="text-align: center;">
+					<a href="http://facebook.com/harrie.bird" target="_blank">harriebird</a>
+				</div>
+			</div>
+		</section>
+		
+		<section role="region" id="solver" style="display:none;">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h1 id="header"></h1>
+				</div>
+				<div id="panel-body">
+					<form role="form">
+						<div class="form-group">
+							<label for="value1" id="lbl-value1"></label>
+							<input type="number" name="value1" id="value1" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="value2" id="lbl-value2"></label>
+							<input type="number" name="value2" id="value2" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="answer" id="lbl-answer">Fraction<sub>enhanced</sub></label>
+							<input type="text" name="answer" id="answer" readonly="true" class="form-control input-lg">
+						</div>
+					</form>
+					<button class="btn btn-primary btn-block btn-lg" id="cal-fe" role="button">Solve</button>
+					<button class="btn btn-primary btn-block btn-lg" id="cal-se" role="button">Solve</button>
+					<button class="btn btn-primary btn-block btn-lg" id="cal-so" role="button">Solve</button>
+					<button class="btn btn-warning btn-block go-back" role="button">Go Back</button>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
+<script type="text/javascript" src="lib/functions.js"></script>

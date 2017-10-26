@@ -1,0 +1,19 @@
+{
+  "name": "Amdahl Solver",
+  "version": "1.5",
+  "description": "An App that solves Amdahl's law equation.",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Paul Harriet S. Asiñero",
+    "url": "http://facebook.com/harrie.bird"
+  },
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "default_locale": "en",
+  "chrome": { 
+    "navigation": false
+  },
+  "fullscreen": "true",
+  "csp" : "default-src *; script-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline'"
+}
